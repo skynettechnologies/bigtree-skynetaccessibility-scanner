@@ -1,0 +1,64 @@
+{
+    "type": "extension",
+    "id": "com.skynettechnologies.skynetaccessibilityscanner",
+    "version": "1.0",
+    "revision": 1,
+    "compatibility": "4.2+",
+    "title": "SkynetAccessibility Scanner",
+    "description": "Scan, monitor, and identify website accessibility issues across WCAG 2.0, 2.1, 2.2, ADA, and EAA.",
+    "keywords": [
+        "Scan",
+        "monitor",
+        "WCAG 2.0",
+        "2.1",
+        "2.2",
+        "ADA",
+        "and EAA."
+    ],
+    "author": {
+        "name": "Skynet Technologies USA LLC",
+        "email": "hello@skynettechnologies.com",
+        "url": "https://www.skynettechnologies.com"
+    },
+    "licenses": {
+        "MIT": "http://opensource.org/licenses/MIT"
+    },
+    "components": {
+        "module_groups": [
+            {
+                "name": "Utilities",
+                "route": "utilities",
+                "id": "module-groups-16989e32f25436",
+                "extension": "com.skynettechnologies.allinoneaccessibility"
+            }
+        ],
+      "modules": [
+            {
+                "name": "SkynetAccessibility Scanner",
+                "route": "skynetaccessibility-scanner",
+                "class": "skynetaccessibilityscanner",
+                "group": "module-groups-16989e32f25436",
+                "icon": "gear",
+                "actions": [
+                {
+                    "route": "",
+                    "in_nav": "on",
+                    "class": "list",
+                    "name": "SkynetAccessibility Scanner",
+                    "level": 0,
+                    "position": 1
+                }
+                ],
+                "id": "modules-skynetaccessibilityscanner"
+            }
+      ],
+        "templates": [],
+        "callouts": [],
+        "settings": [],
+        "feeds": [],
+        "field_types": [],
+        "tables": {
+            "skynetaccessibilityscanner": "CREATE TABLE `skynetaccessibilityscanner` (   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,   `name` varchar(1024) DEFAULT NULL,   PRIMARY KEY (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci"
+        }
+    }
+}
