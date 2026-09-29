@@ -29,7 +29,7 @@
                 "name": "Utilities",
                 "route": "utilities",
                 "id": "module-groups-16989e32f25436",
-                "extension": "com.skynettechnologies.allinoneaccessibility"
+                "extension": "com.skynettechnologies.skynetaccessibilityscanner"
             }
         ],
       "modules": [
@@ -39,6 +39,7 @@
                 "class": "skynetaccessibilityscanner",
                 "group": "module-groups-16989e32f25436",
                 "icon": "gear",
+                "extension": "com.skynettechnologies.skynetaccessibilityscanner",
                 "actions": [
                 {
                     "route": "",
